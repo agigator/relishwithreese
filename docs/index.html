@@ -1,1 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain For Sale</title>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #88bef3;
+            color: #444;
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        p, a {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            border: 2px solid #d44e06;
+            border-radius: 5px;
+            padding: 10px 20px;
+            background-color: #d44e06;
+            box-shadow: 2px 2px 5px #ffffff;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        a:hover {
+            background-color: #75e0c7;
+            color: #ffffff;
+            border-color: #75e0c7;
+        }
+        .faq-table, .website-table, .email-table {
+            margin: 30px auto;
+            width: 90%;
+            max-width: 800px;
+            border-collapse: collapse;
+            border-radius: 21px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .faq-table th, .website-table th, .email-table th {
+            background-color: #a99bff;
+            color: #fff;
+            padding: 15px;
+            font-size: 1.2em;
+            text-align: center;
+        }
+        .faq-table td, .website-table td, .email-table td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+            background-color: #f1f1f1;
+        }
+        .faq-answer {
+            display: none;
+            padding: 10px;
+            margin-top: 10px;
+            
+        }
 
+        .faq-table td:hover, .website-table td:hover {
+            background-color: #e0e7ef;
+        }
+        .clicked-question {
+            border-left: 2px solid #d44e06; /* Orange border */
+            border-right: 2px solid #d44e06;
+        }
+    </style>
+</head>
+<body>
+    <h1>This Domain is Up for Grabs!</h1>
+    <p>Looking for the perfect domain? You're in the right place! Visit the link below to make it yours today.</p>
+    <a href="https://www.namecheap.com" target="_blank">Buy Now on www.namecheap.com</a>
+
+    <div style="height: 20px;"></div>
+
+    <table class="email-table">
+        <thead>
+            <tr><th>With your new domain, you’ll get access to professional email addresses like:</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>promotions@relishwithreese.com</td></tr>
+            <tr><td>collabs@relishwithreese.com</td></tr>
+            <tr><td>support@relishwithreese.com</td></tr>
+        </tbody>
+    </table>
+
+    <div style="height: 20px;"></div>
+
+    <table class="faq-table">
+        <thead>
+            <tr><th>FAQ</th></tr>
+        </thead>
+        <tbody>
+            <tr onclick="toggleAnswer(this)"><td>What is a domain name?</td></tr>
+            <tr class="faq-answer"><td>A domain name is like an address for your website. It’s what people type into their browser to find you, like www.example.com.</td></tr>
+            <tr onclick="toggleAnswer(this)"><td>Why do I need a domain name for my website?</td></tr>
+            <tr class="faq-answer"><td>A domain name makes it easy for people to find your website and gives it a professional look. It’s also easier to remember than a long or random web link.</td></tr>
+            <tr onclick="toggleAnswer(this)"><td>What’s the difference between a domain name and a website?</td></tr>
+            <tr class="faq-answer"><td>A domain name is your address, and your website is the house at that address. You need both to have an online presence.</td></tr>
+            <tr onclick="toggleAnswer(this)"><td>How do I buy this domain?</td></tr>
+            <tr class="faq-answer"><td>Click the "Buy Now" button on this page and follow the steps to create an account. Then search and purchase the domain.</td></tr>
+            <tr onclick="toggleAnswer(this)"><td>What happens after I purchase the domain?</td></tr>
+            <tr class="faq-answer"><td>Once you buy the domain, we'll transfer ownership to you. This means the domain will be yours to use however you’d like.</td></tr>
+            <tr onclick="toggleAnswer(this)"><td>How long does it take to transfer the domain to me?</td></tr>
+            <tr class="faq-answer"><td>It usually takes 1-5 business days, depending on how quickly the process moves between registrars.</td></tr>
+        </tbody>
+    </table>
+
+    <table class="website-table">
+        <thead>
+            <tr><th>Making a Website</th></tr>
+        </thead>
+        <tbody>
+            <tr onclick="toggleAnswer(this)"><td>Do I need a website to use this domain?</td></tr>
+            <tr class="faq-answer"><td>Not right away! You can hold onto the domain and create a website later when you’re ready.</td></tr>
+            <tr onclick="toggleAnswer(this)"><td>How can I connect my domain to a website?</td></tr>
+            <tr class="faq-answer"><td>You’ll need to link your domain to a website builder or hosting service. Services like Squarespace make this process super easy with clear instructions.</td></tr>
+            <tr onclick="toggleAnswer(this)"><td>What happens if I don’t use my domain right away?</td></tr>
+            <tr class="faq-answer"><td>No problem! You can keep the domain as yours until you’re ready to use it. Many people buy domains they plan to use in the future.</td></tr>
+            <tr onclick="toggleAnswer(this)"><td>What’s the easiest way to set up a website with this domain?</td></tr>
+            <tr class="faq-answer"><td>We recommend using Squarespace. It’s beginner-friendly, with templates and tools that make building a website simple and fast.</td></tr>
+            <tr onclick="toggleAnswer(this)"><td>Why should I use Squarespace instead of the current registrar?</td></tr>
+            <tr class="faq-answer"><td>Squarespace combines website building and domain management in one place for beginners. Unlike Namecheap, Squarespace offers design tools, hosting, and customer support.</td></tr>
+            <tr onclick="toggleAnswer(this)"><td>Can I transfer my domain to Squarespace easily?</td></tr>
+            <tr class="faq-answer"><td>Yes! Squarespace has a step-by-step guide to help you move your domain and set it up with your website.</td></tr>
+        </tbody>
+    </table>
+
+    <script>
+        function toggleAnswer(element) {
+            const answerRow = element.nextElementSibling;
+            if (answerRow && answerRow.classList.contains('faq-answer')) {
+                answerRow.style.display = answerRow.style.display === 'table-row' ? 'none' : 'table-row';
+                element.classList.toggle('clicked-question');
+            }
+        }
+    </script>
+</body>
+</html>
